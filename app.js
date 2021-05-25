@@ -20,7 +20,7 @@ app.use(helmet());
 var mongoose = require('mongoose');
 // Set up mongoose connection
 var dev_db_url = 'mongodb+srv://henry:mongopassword@cluster0.8tb16.mongodb.net/local_library?retryWrites=true&w=majority'
-var mongoDB = process.env.MONGODB_URI || dev_db_url;
+var mongoDB = process.env.MONGODB_URI;
 
 //heroku config:set MONGODB_URI=mongodb+srv://henry:mongopassword@cluster0.8tb16.mongodb.net/local_library?retryWrites=true&w=majority
 
